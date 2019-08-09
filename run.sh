@@ -30,6 +30,8 @@ pip3 download -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 EOF
 
 
+chmod +x download-python-packages.sh
+
 #判断文件是否存在
 if [ ! -f $requirements_file ]
 then
@@ -58,7 +60,7 @@ docker cp python-package-download:/tmp/download downloaded-packages
 
 EOF
 
-chmod +x download-python-packages.sh
+
 chmod +x autodownload.sh
 ./autodownload.sh
 
