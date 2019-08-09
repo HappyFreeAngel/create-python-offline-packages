@@ -9,8 +9,8 @@ echo "最新版本请见 https://github.com/HappyFreeAngel/create-python-offline
 echo “离线下载python包”
 
 
-download_dir=$current_file_path+"/download"
-requirements_file=$current_file_path+"/requirements.txt"
+download_dir="${current_file_path}/download"
+requirements_file="${current_file_path}/requirements.txt"
 
 #判断目录是否存在
 if [ ! -d $download_dir ]
