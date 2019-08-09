@@ -40,7 +40,8 @@ echo "以下docker请在树莓派设备上运行"
 
 echo "python 安装包的信息 requirements.txt 请放在当前目录download目录下"
 #下面的镜像可以替换为你自己最终运行时环境下的docker镜像。
-base_docker_image="ascs/iot-env-base:raspberrypi3-opencv4.0.1-tesseract5.0.0-alpha-python3.5.3-python2.7.13"
+base_docker_image="python:3.7-buster"
+#base_docker_image="ascs/iot-env-base:raspberrypi3-opencv4.0.1-tesseract5.0.0-alpha-python3.5.3-python2.7.13"
 docker stop python-package-download;docker rm python-package-download
 docker run -d --name  python-package-download -ti ${base_docker_image} bash
 docker exec python-package-download mkdir -p /tmp/download/
