@@ -1,3 +1,7 @@
+
+https://blog.csdn.net/happyfreeangel/article/details/98944591
+
+
 最近经常开发人工智能相关项目，经常需要安装不通硬件平台不同操作系统版本不同python版本的各种包，
 耗费了大量的时间和精力都是在下载等待中，要么就是失败重试.
 
