@@ -33,7 +33,6 @@ else
 fi
 
 
-
 cat << EOF >autodownload.sh
 
 #!/usr/bin/env bash
