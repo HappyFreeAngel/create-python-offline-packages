@@ -30,7 +30,7 @@ pip3 download -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 EOF
 
 
-chmod +x download-python-packages.sh
+chmod +x ${download_dir}/download-python-packages.sh
 
 #判断文件是否存在
 if [ ! -f $requirements_file ]
